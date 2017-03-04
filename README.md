@@ -8,15 +8,6 @@ Heuristic is a function of three parameters.
         Heuristic Value = F (Cell Utility Value, Disk Parity, Mobility)  
 
 1. Cell Utility Value: Every cell (square) is assigned a value depending upon the stability of the disks placed on that square. For example, Corners are given the highest value because once captured, they cannot be flanked by the opponent. The cells adjacent to corners have negative values as they can be flanked easily if the other player occupies corner.
-Individual cell utility values are assigned as below: 
-  25 -5 14 10 10 14 -5 25
-  -5 -7 -4  1  1 -4 -7 -5 
-  14 -4  3  2  2  3 -4 14
-  10  1  2 -6 -6  2  1 10
-  10  1  2 -6 -6  2  1 10
-  14 -4  3  2  2  3 -4 14 
-  -5 -7 -4  1  1 -4 -7 -5
-  25 -5 14 10 10 14 -5 25 
   
 2. Disk Parity: The move which increases the number of disks of the player on the board by a greater amount is considered a better move. So, this parameter of heuristics takes into account the relative difference in number of disks occupied by max player and the min player after a move.  
         Disk Parity =   (Max Player Disks - Min Player Disks) / (Max Player Disks+ Min Player Disks)  
