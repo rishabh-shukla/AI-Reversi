@@ -1,3 +1,5 @@
+//rishabh-shukla
+//Computer vs Player game for Othello (Reversi)
 #include <iostream>
 #include <vector>
 #include <string>
